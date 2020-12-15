@@ -34,7 +34,7 @@ comment3 = input ("Enter your comment : ")
 
 
 print("Reading reddit list")
-subredit_list = open("data.txt", "r")
+subredit_list = open("datac.txt", "r")
 subreddits = subredit_list.read().split(',')
 
 for subreddit in subreddits:
