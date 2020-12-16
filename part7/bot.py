@@ -6,11 +6,11 @@ import requests
 import sys
 from sys import exit
 
-reddit = praw.Reddit(client_id="S2myvCT6T4YP0Q",
-                     client_secret="GJuOgAxA8onyZ99cSSIyMUrvZildVQ",
-                     password="Special-Addition2345",
-                     user_agent="posted by u/Special-Addition2345",
-                     username="Special-Addition2345")
+reddit = praw.Reddit(client_id="9k5p8NdOWZxwJA",
+                     client_secret="2_hHT8uZuvzkRf6_ft31_0TKGxuQZg",
+                     password="BluebirdSerious7430",
+                     user_agent="posted by u/BluebirdSerious7430",
+                     username="BluebirdSerious7430")
 
 result = pyfiglet.figlet_format("Dylan OP")
 print(result)
@@ -48,13 +48,13 @@ for subreddit in subreddits:
     print ("done")
   except Exception as err:
     print("Exception for subreddit {}, {}".format(subreddit, err))
-  t= random.randint(650,750)
+  t= random.randint(650,1150)
   seconds = "Sleeping for {} seconds before proceeding".format(t)
   print(seconds)
   time.sleep(t)
 
 print("Reading reddit list")
-subredit_list = open("data.txt", "r")
+subredit_list = open("datac.txt", "r")
 subreddits = subredit_list.read().split(',')
 
 for subreddit in subreddits:
@@ -68,13 +68,13 @@ for subreddit in subreddits:
     print ("done")
   except Exception as err:
     print("Exception for subreddit {}, {}".format(subreddit, err))
-  t= random.randint(650,700)
+  t= random.randint(650,1100)
   seconds = "Sleeping for {} seconds before proceeding".format(t)
   print(seconds)
   time.sleep(t)
 
 print("Reading reddit list")
-subredit_list = open("data.txt", "r")
+subredit_list = open("datac.txt", "r")
 subreddits = subredit_list.read().split(',')
 
 for subreddit in subreddits:
@@ -88,7 +88,7 @@ for subreddit in subreddits:
     print ("done")
   except Exception as err:
     print("Exception for subreddit {}, {}".format(subreddit, err))
-  t= random.randint(600,720)
+  t= random.randint(600,1120)
   seconds = "Sleeping for {} seconds before proceeding".format(t)
   print(seconds)
   time.sleep(t)
