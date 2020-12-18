@@ -10,7 +10,7 @@ reddit = praw.Reddit(client_id="Ib-Tj8cVP1bMRA",
                      client_secret="agpgKzmEolAX60x3xAjzTavUUZENig",
                      password="PomeloOtherwise1626",
                      user_agent="posted by u/lPomeloOtherwise1626",
-                     username="PomeloOtherwise1626)
+                     username="PomeloOtherwise1626")
 
 result = pyfiglet.figlet_format("Dylan OP")
 print(result)
