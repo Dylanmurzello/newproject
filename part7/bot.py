@@ -48,7 +48,7 @@ for subreddit in subreddits:
     print ("done")
   except Exception as err:
     print("Exception for subreddit {}, {}".format(subreddit, err))
-  t= random.randint(650,1150)
+  t= random.randint(950,2150)
   seconds = "Sleeping for {} seconds before proceeding".format(t)
   print(seconds)
   time.sleep(t)
@@ -56,7 +56,7 @@ for subreddit in subreddits:
 print("Reading reddit list")
 subredit_list = open("datac.txt", "r")
 subreddits = subredit_list.read().split(',')
-
+t= random.randint(6650,7150)
 for subreddit in subreddits:
   try:
     print(subreddit)
@@ -68,11 +68,11 @@ for subreddit in subreddits:
     print ("done")
   except Exception as err:
     print("Exception for subreddit {}, {}".format(subreddit, err))
-  t= random.randint(650,1100)
+  t= random.randint(950,2100)
   seconds = "Sleeping for {} seconds before proceeding".format(t)
   print(seconds)
   time.sleep(t)
-
+  t= random.randint(6650,7150)
 print("Reading reddit list")
 subredit_list = open("datac.txt", "r")
 subreddits = subredit_list.read().split(',')
@@ -88,11 +88,11 @@ for subreddit in subreddits:
     print ("done")
   except Exception as err:
     print("Exception for subreddit {}, {}".format(subreddit, err))
-  t= random.randint(600,1120)
+  t= random.randint(900,2120)
   seconds = "Sleeping for {} seconds before proceeding".format(t)
   print(seconds)
   time.sleep(t)
-
+  t= random.randint(6650,7150)
 
 data = {}
 count = 0
