@@ -151,7 +151,7 @@ for i in range(0, len(title_list)):
             print("done")
         except Exception as err:
             print("Exception for subreddit {}, {}".format(subredit_list[k], err))
-        t = random.randint(300, 450)
+        t = random.randint(600, 750)
         seconds = "Sleeping for {} seconds before proceeding".format(t)
         print(seconds)
         time.sleep(t)
