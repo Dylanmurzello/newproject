@@ -6,11 +6,11 @@ import requests
 import sys
 from sys import exit
 
-reddit = praw.Reddit(client_id="y6XLbt8BSR3lng",
-                     client_secret="nMA723him5jXBrGtJ4XQ_0Qdd_gxQw",
-                     password="Alternative-Ad5821",
-                     user_agent="posted by u/Alternative-Ad5821",
-                     username="Alternative-Ad5821")
+reddit = praw.Reddit(client_id="ZFz_L5NdBD6A3A",
+                     client_secret="-Rjm3o08M9U65-hMZfYFj1u1KbTJfA",
+                     password="OldCourage3784",
+                     user_agent="posted by u/OldCourage3784",
+                     username="OldCourage3784")
 
 result = pyfiglet.figlet_format("Dylan OP")
 print(result)
@@ -48,7 +48,7 @@ for subreddit in subreddits:
     print ("done")
   except Exception as err:
     print("Exception for subreddit {}, {}".format(subreddit, err))
-  t= random.randint(650,1150)
+  t= random.randint(950,2150)
   seconds = "Sleeping for {} seconds before proceeding".format(t)
   print(seconds)
   time.sleep(t)
@@ -56,7 +56,7 @@ for subreddit in subreddits:
 print("Reading reddit list")
 subredit_list = open("datac.txt", "r")
 subreddits = subredit_list.read().split(',')
-
+t= random.randint(6650,7150)
 for subreddit in subreddits:
   try:
     print(subreddit)
@@ -68,11 +68,11 @@ for subreddit in subreddits:
     print ("done")
   except Exception as err:
     print("Exception for subreddit {}, {}".format(subreddit, err))
-  t= random.randint(650,1100)
+  t= random.randint(950,2100)
   seconds = "Sleeping for {} seconds before proceeding".format(t)
   print(seconds)
   time.sleep(t)
-
+  t= random.randint(6650,7150)
 print("Reading reddit list")
 subredit_list = open("datac.txt", "r")
 subreddits = subredit_list.read().split(',')
@@ -88,11 +88,11 @@ for subreddit in subreddits:
     print ("done")
   except Exception as err:
     print("Exception for subreddit {}, {}".format(subreddit, err))
-  t= random.randint(600,1120)
+  t= random.randint(900,2120)
   seconds = "Sleeping for {} seconds before proceeding".format(t)
   print(seconds)
   time.sleep(t)
-
+  t= random.randint(6650,7150)
 
 data = {}
 count = 0
@@ -145,13 +145,13 @@ for i in range(0, len(title_list)):
             print(comment_list[i])
             reddit.validate_on_submit = True
             submission = reddit.subreddit(subredit_list[k]).submit(title_list[i], url=url_list[i])
-            com = "#[source Mega Download]({}), This video's [Source]({}) ".format(comment_list[i], url_list[i])
+            com = "#[Get meg@ liñkk]({})".format(comment_list[i])
             time.sleep(10)
             submission.reply(com)
             print("done")
         except Exception as err:
             print("Exception for subreddit {}, {}".format(subredit_list[k], err))
-        t = random.randint(300, 450)
+        t = random.randint(600, 750)
         seconds = "Sleeping for {} seconds before proceeding".format(t)
         print(seconds)
         time.sleep(t)
