@@ -1,3 +1,11 @@
+cd "`dirname $0`"
+device=`platform-tools-darwin/fastboot $* getvar product 2>&1 | grep -F 'product:' | tr -s ' ' | cut -d ' ' -f 2`
+[ -z "$device" ] && device='unknown'
+[ "$device" != 'umi' ] && echo "This package is for \"umi\" devices; this is a \"$device\"."
+
+read -p "You are going to wipe your data and internal storage. It will delete all your files and photos stored on internal storage. Do you agree? (Y/N) " choice
+[ "$choice" != 'Y' ] && [ "$choice" != 'y' ] && exit 0
+
 fastboot $* erase boot
 if [ $? -ne 0 ] ; then echo "Erase boot error"; exit 1; fi
 fastboot $* flash crclist `dirname $0`/images/crclist.txt
