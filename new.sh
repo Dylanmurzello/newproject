@@ -1,14 +1,3 @@
-
-
-#check anti_version
-if [ -e $(dirname $0)/images/anti_version.txt ]; then
-CURRENT_ANTI_VER=`cat $(dirname $0)/images/anti_version.txt`
-fi
-if [ -z "$CURRENT_ANTI_VER" ]; then CURRENT_ANTI_VER=0; fi
-ver=`fastboot $* getvar anti 2>&1 | grep -oP "anti: \K[0-9]+"`
-if [ -z "$ver" ]; then ver=0; fi
-if [ $ver -gt $CURRENT_ANTI_VER ]; then echo "Current device antirollback version is greater than this pakcage"; exit 1; fi
-
 fastboot $* erase boot
 if [ $? -ne 0 ] ; then echo "Erase boot error"; exit 1; fi
 fastboot $* flash crclist `dirname $0`/images/crclist.txt
